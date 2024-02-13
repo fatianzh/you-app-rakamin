@@ -11,13 +11,13 @@ import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDGogx5meMI1YGLl73BVsHw9gYeTX072SY",
-  authDomain: "belajar-firebase-12036.firebaseapp.com",
-  projectId: "belajar-firebase-12036",
-  storageBucket: "belajar-firebase-12036.appspot.com",
-  messagingSenderId: "875920946945",
-  appId: "1:875920946945:web:886638735f3c384e770d00",
-  measurementId: "G-FE91CE3L7R",
+  apiKey: "AIzaSyCVbLmE3CRKg4Asb9fC8_6phfVKdkbcywY",
+  authDomain: "belajar-firebase-79d9f.firebaseapp.com",
+  projectId: "belajar-firebase-79d9f",
+  storageBucket: "belajar-firebase-79d9f.appspot.com",
+  messagingSenderId: "29138410324",
+  appId: "1:29138410324:web:c48e80ec60f999749646c1",
+  measurementId: "G-K4NV57F96H"
 };
 
 export default function LoginPage() {
