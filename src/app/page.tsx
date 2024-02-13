@@ -7,6 +7,18 @@ import { useSignIn } from "@/services/auth/useAuth";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 import { Controller, useForm } from "react-hook-form";
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyCVbLmE3CRKg4Asb9fC8_6phfVKdkbcywY",
+  authDomain: "belajar-firebase-79d9f.firebaseapp.com",
+  projectId: "belajar-firebase-79d9f",
+  storageBucket: "belajar-firebase-79d9f.appspot.com",
+  messagingSenderId: "29138410324",
+  appId: "1:29138410324:web:c48e80ec60f999749646c1",
+  measurementId: "G-K4NV57F96H"
+};
 
 export default function LoginPage() {
   const router = useRouter();
@@ -51,6 +63,12 @@ export default function LoginPage() {
 
     handleCheckIsLogin();
     // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  useEffect(() => {
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+    console.log("🚀 ~ useEffect ~ analytics:", analytics);
   }, []);
 
   return (
